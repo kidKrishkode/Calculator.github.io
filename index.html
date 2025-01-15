@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="og:title" content="Calculator"/>
+    <meta property="og:image" content="./Components/favicon.ico" name="og:image"/>
+    <meta itemprop="image" content="https://github.com/Krishnendu-Mitra/Calculator/Components/favicon.ico"/>
+    <meta property="og:site_name" content="Calculator"/>
+    <meta property="twitter:image" content="https://github.com/Krishnendu-Mitra/Calculator/Components/favicon.ico"/>
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:title" content="Calculator"/>
+    <meta content="Calculator web is based on hex framework which able to calculate daily life problems, it is a simple calculator" lang="en-us" name="description"/>
+    <meta content="Calculator, Website, tutorial, Hex Framework, Vanilla Stack, Calculation, project, Krishnendu Mitra" lang="en-us" name="keywords"/>
+    <title version="1.0">Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./Components/origin.css"/>
+    <link rel="icon" href="./Components/"/>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="calculator-body container">
+        <div class="display"></div>
+        <div class="btn-holder container">
+            <div class="btn btn-danger" title="All Clear" onclick="clearAll();" aria-hidden="true">AC</div>
+            <div class="btn btn-danger" title="Clear Last" onclick="clearLast();" aria-hidden="true">C</div>
+            <div class="btn btn-primary" title="Percentage" onclick="percentage();" aria-hidden="true">%</div>
+            <div class="btn btn-primary" title="Equal" onclick="evalute();" aria-hidden="true">=</div>
+            <div class="btn btn-dark" title="9" onclick="display(9);" aria-hidden="true">9</div>
+            <div class="btn btn-dark" title="8" onclick="display(8);" aria-hidden="true">8</div>
+            <div class="btn btn-dark" title="7" onclick="display(7);" aria-hidden="true">7</div>
+            <div class="btn btn-primary" title="Divide" onclick="display('/');" aria-hidden="true">/</div>
+            <div class="btn btn-dark" title="6" onclick="display(6);" aria-hidden="true">6</div>
+            <div class="btn btn-dark" title="5" onclick="display(5);" aria-hidden="true">5</div>
+            <div class="btn btn-dark" title="4" onclick="display(4);" aria-hidden="true">4</div>
+            <div class="btn btn-primary" title="Multiply" onclick="display('*');" aria-hidden="true">x</div>
+            <div class="btn btn-dark" title="3" onclick="display(3);" aria-hidden="true">3</div>
+            <div class="btn btn-dark" title="2" onclick="display(2);" aria-hidden="true">2</div>
+            <div class="btn btn-dark" title="1" onclick="display(1);" aria-hidden="true">1</div>
+            <div class="btn btn-primary" title="Substract" onclick="display('-');" aria-hidden="true">-</div>
+            <div class="btn btn-dark" title="00" onclick="display('00');" aria-hidden="true">00</div>
+            <div class="btn btn-dark" title="0" onclick="display(0);" aria-hidden="true">0</div>
+            <div class="btn btn-dark" title="." onclick="display('.');" aria-hidden="true">.</div>
+            <div class="btn btn-primary" title="Sumesion" onclick="display('+');" aria-hidden="true">+</div>
+        </div>
+    </div>
+</body>
+<script src="./Components/hex.js"></script>
+</html>
